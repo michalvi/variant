@@ -19,7 +19,7 @@ namespace eggs { namespace variants { namespace detail
 {
     struct empty
     {
-        EGGS_CXX11_CONSTEXPR empty() EGGS_CXX11_NOEXCEPT {}
+        EGGS_CXX11_CONSTEXPR empty() noexcept {}
         EGGS_CXX11_CONSTEXPR bool operator==(empty) const { return true; }
         EGGS_CXX11_CONSTEXPR bool operator!=(empty) const { return false; }
         EGGS_CXX11_CONSTEXPR bool operator<(empty) const { return false; }
